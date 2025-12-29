@@ -1,0 +1,166 @@
+/* about.css */
+.about-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.about-container {
+  max-width: 1152px;
+  width: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #22d3ee;
+}
+
+.section-divider {
+  width: 5rem;
+  height: 0.25rem;
+  background: linear-gradient(to right, #22d3ee, #60a5fa);
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-image-wrapper {
+  position: relative;
+}
+
+.profile-border {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #06b6d4, #3b82f6);
+  padding: 0.25rem;
+  box-shadow: 0 25px 50px rgba(6, 182, 212, 0.5);
+}
+
+.profile-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.profile-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.award-badge {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  width: 6rem;
+  height: 6rem;
+  background: linear-gradient(to bottom right, #06b6d4, #3b82f6);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-card {
+  background: linear-gradient(to bottom right, rgba(31, 41, 55, 0.5), rgba(17, 24, 39, 0.5));
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #374151;
+  transition: border-color 0.3s ease;
+}
+
+.about-card:hover {
+  border-color: rgba(6, 182, 212, 0.5);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #22d3ee;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-text {
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.stats-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background-color: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  flex: 1;
+  min-width: 8rem;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #22d3ee;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
